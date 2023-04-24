@@ -1,18 +1,15 @@
 {
-  "name": "chatgpt",
-  "version": "5.2.2",
+  "name": "chatgpt-l",
+  "version": "0.1.1",
   "description": "Node.js client for the official ChatGPT API.",
   "author": "Travis Fischer <travis@transitivebullsh.it>",
-  "repository": "transitive-bullshit/chatgpt-api",
-  "license": "MIT",
-  "type": "module",
   "source": "./src/index.ts",
   "types": "./build/index.d.ts",
   "exports": {
     ".": {
-      "import": "./build/index.js",
+      "import": "./build/index.cjs",
       "types": "./build/index.d.ts",
-      "default": "./build/index.js"
+      "default": "./build/index.cjs"
     }
   },
   "files": [
@@ -37,13 +34,10 @@
     "test:prettier": "prettier '**/*.{js,jsx,ts,tsx}' --check"
   },
   "dependencies": {
-    "@dqbd/tiktoken": "^1.0.2",
     "cac": "^6.7.14",
     "conf": "^11.0.1",
     "eventsource-parser": "^1.0.0",
-    "keyv": "^4.5.2",
     "p-timeout": "^6.1.1",
-    "quick-lru": "^6.1.1",
     "read-pkg-up": "^9.1.0",
     "uuid": "^9.0.0"
   },

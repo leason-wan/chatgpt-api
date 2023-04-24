@@ -1,38 +1,6 @@
-import Keyv from 'keyv'
-
 export type Role = 'user' | 'assistant' | 'system'
 
 export type FetchFn = typeof fetch
-
-export type ChatGPTAPIOptions = {
-  apiKey: string
-
-  /** @defaultValue `'https://api.openai.com'` **/
-  apiBaseUrl?: string
-
-  apiOrg?: string
-
-  /** @defaultValue `false` **/
-  debug?: boolean
-
-  completionParams?: Partial<
-    Omit<openai.CreateChatCompletionRequest, 'messages' | 'n' | 'stream'>
-  >
-
-  systemMessage?: string
-
-  /** @defaultValue `4096` **/
-  maxModelTokens?: number
-
-  /** @defaultValue `1000` **/
-  maxResponseTokens?: number
-
-  messageStore?: Keyv
-  getMessageById?: GetMessageByIdFunction
-  upsertMessage?: UpsertMessageFunction
-
-  fetch?: FetchFn
-}
 
 export type SendMessageOptions = {
   /** The name of a user in a multi-user chat. */
