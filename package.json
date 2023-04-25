@@ -1,15 +1,15 @@
 {
   "name": "chatgpt-l",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "description": "Node.js client for the official ChatGPT API.",
   "author": "Travis Fischer <travis@transitivebullsh.it>",
   "source": "./src/index.ts",
   "types": "./build/index.d.ts",
   "exports": {
     ".": {
-      "import": "./build/index.cjs",
+      "import": "./build/index.js",
       "types": "./build/index.d.ts",
-      "default": "./build/index.cjs"
+      "default": "./build/index.js"
     }
   },
   "files": [
