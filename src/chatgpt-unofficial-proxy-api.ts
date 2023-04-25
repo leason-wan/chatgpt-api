@@ -218,7 +218,8 @@ export class ChatGPTUnofficialProxyAPI {
                 }
               }
             } catch (err) {
-              reject(err)
+              // ignore timeStamp, this is a workaround for chatgpt
+              // reject(err)
             }
           },
           onError: (err) => {

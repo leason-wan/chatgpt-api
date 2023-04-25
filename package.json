@@ -1,9 +1,9 @@
 {
-  "name": "chatgpt",
-  "version": "5.2.2",
+  "name": "chatgpt-p",
+  "version": "0.0.2",
   "description": "Node.js client for the official ChatGPT API.",
-  "author": "Travis Fischer <travis@transitivebullsh.it>",
-  "repository": "transitive-bullshit/chatgpt-api",
+  "author": "leason",
+  "repository": "leason-wan/chatgpt-api",
   "license": "MIT",
   "type": "module",
   "source": "./src/index.ts",
