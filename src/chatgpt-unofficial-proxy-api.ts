@@ -177,7 +177,7 @@ export class ChatGPTUnofficialProxyAPI {
       }
 
       if (this._debug) {
-        console.log('POST', url, { body, headers })
+        console.log('POST', url, { body: JSON.stringify(body), headers })
       }
 
       fetchSSE(
