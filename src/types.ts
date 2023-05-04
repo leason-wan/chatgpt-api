@@ -28,6 +28,7 @@ export type SendMessageBrowserOptions = {
   timeoutMs?: number
   onProgress?: (partialResponse: ChatMessage) => void
   abortSignal?: AbortSignal
+  baseUrl?: string
 }
 
 export interface ChatMessage {

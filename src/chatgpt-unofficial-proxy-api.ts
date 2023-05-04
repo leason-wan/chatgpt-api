@@ -168,7 +168,7 @@ export class ChatGPTUnofficialProxyAPI {
     }
 
     const responseP = new Promise<types.ChatMessage>((resolve, reject) => {
-      const url = this._apiReverseProxyUrl
+      const url = opts.baseUrl || this._apiReverseProxyUrl
       const headers = {
         ...this._headers,
         Authorization: `Bearer ${this._accessToken}`,
